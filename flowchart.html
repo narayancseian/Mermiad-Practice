@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/mermaid@8.6.0/dist/mermaid.min.js"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+       <div class="mermaid">
+        graph TD  
+        A[Start] --> B[Student] --> C{Are you Coder?}  
+        C -->|Yes| D[Do some code]  
+        C -->|No| E[Read anything else] 
+      </div>
+       <div class="mermaid">
+        sequenceDiagram
+	Narayan->>+Abhishek: Hello Abhishek, how are you?
+    Abhishek-->>-Narayan: Hi Narayan, I am Good!
+	Abhishek->>+Narayan: And you?
+    Narayan-->>-Abhishek: I am Also Good.	
+      </div>
+  </body>
+</html>
